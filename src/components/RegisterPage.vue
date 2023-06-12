@@ -70,6 +70,7 @@
             // Handle successful registration, such as displaying a success message or redirecting to the login page
             this.registerSuccess = true;
             this.registerError = false;
+            this.$router.push({ name: 'LoginPage'});
           } else {
             // Handle failed registration, such as displaying an error message
             this.registerErrorMessage = result.message;
