@@ -8,8 +8,12 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@microsoft/signalr": "^7.0.5",
     "core-js": "^3.8.3",
-    "vue": "^3.2.13"
+    "jwt-decode": "^3.1.2",
+    "jwt-decoder": "^0.0.0",
+    "vue": "^3.2.13",
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
