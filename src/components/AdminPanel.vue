@@ -76,6 +76,8 @@
         this.isAdmin = true;
       }else this.isAdmin = false;
         }
+        if(this.isAdmin === false)
+        this.$router.push({ name: 'LoginPage'});
       },
       methods: {
           async loadUsers() {
