@@ -6,7 +6,7 @@ import RegisterPage from '../components/RegisterPage.vue';
 import ProfilePage from '../components/ProfilePage.vue';
 import AdminPanel from '../components/AdminPanel.vue';
 import AdminProfileDetail from '../components/AdminProfileDetail.vue';
-import jwtDecode from 'jwt-decode';
+
 const routes = [
   
   {
