@@ -14,7 +14,7 @@
             <button type="button" class="btn btn-primary" @click="$router.push('/registerpage')">Register</button>
         </form>
         <div v-if="loginSuccess">Login successful!</div>
-        <div v-if="loginError">{{ loginErrorMessage }}</div>
+        <div v-if="loginError">Wrong Username or Password</div>
     </div>
 </template>
 <style>
