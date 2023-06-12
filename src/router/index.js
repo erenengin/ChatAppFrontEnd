@@ -79,8 +79,8 @@ router.beforeEach((to, from, next) => {
 
   
   const token = localStorage.getItem('token');
-      
-        const decodedToken = jwtDecode(token);
+      if(token)
+        var decodedToken = jwtDecode(token);
        
         const role = decodedToken['http://schemas.microsoft.com/ws/2008/06/identity/claims/role'];
   // Kullanıcının rollerini al (localStorage'den veya API'den)
