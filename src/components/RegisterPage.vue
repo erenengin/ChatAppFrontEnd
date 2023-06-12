@@ -1,6 +1,8 @@
 <template>
+  <button @click="goToHomePage" class="back-button">Go Back</button>
     <div class="register-container">
       <h1>Register Page</h1>
+      
       <form>
         <div class="form-group">
           <label for="username">Username:</label>
@@ -81,6 +83,10 @@
           console.error(error);
         }
       },
+      goToHomePage() {
+      this.$router.push('/'); 
+    }
+
     },
   };
   </script>
@@ -121,4 +127,18 @@
     border-radius: 0.25rem;
     cursor: pointer;
   }
+
+  .back-button {
+  background-color: #f5f5f5;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.back-button i {
+  margin-right: 5px;
+}
   </style>
